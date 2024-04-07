@@ -1,0 +1,19 @@
+<!-- <div class="wideRow">
+    <label for="preg" class="itemNarrow">Post Id:</label>
+    <input type="text" class="itemWide" name="postId" value="<%= post.postId %>" autocomplete="off"/>
+</div> -->
+<div class="wideRow">
+    <label for="preg" class="itemNarrow">Post Title:</label>
+    <input type="text" class="itemWide" name="title" value="<%= post.title %>" autocomplete="off"/>
+</div>
+<div class="wideRow">
+    <label for="resp" class="itemNarrow">Post Body:</label>
+    <input type="text" class="itemWide" name="body" value="<%= post.body %>" autocomplete="off"/>
+</div>
+<div>
+    <label for="img">Attach file (Max size 20MB):</label>
+    <input type="file" id="img" name="image"/>
+</div>
+<br/>
+<a href="/posts" class="button">Cancel</a>
+<input type="submit" value="Save">

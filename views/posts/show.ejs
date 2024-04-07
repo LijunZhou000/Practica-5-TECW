@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MiniProject</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <h1>Show Posts:</h1>
+        <% include ../attachments/_attachment %>
+        <ul>
+            <li>Posts: <b><%= post.title %></b></li>
+            <li>Body: <b><%= post.body %></b></li>
+        </ul>
+        <a href="./" class="button">Go back</a>
+        <a href="./<%= post.id%>/attachment" class="button">Image</a>
+    </body>
+</html>
